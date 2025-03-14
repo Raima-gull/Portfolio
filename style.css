@@ -100,8 +100,8 @@ body {
 .hire-me-btn {
     background: #64ffda;
     color: #0A192F;
-    border: none;
-    padding: 8px 25px;
+    border: 2px solid #64ffda;
+    padding: 6px 25px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -287,6 +287,7 @@ body {
 
 .btn:hover {
     color: #0A192F;
+    background:#64ffda;
 }
 
 .hero-image {
@@ -445,14 +446,14 @@ body {
 }
 
 
-.about h2 {
+.about h2, #project-heading {
     font-size: 2.5rem;
     color: #64ffda;
     text-transform: uppercase;
     position: relative;
 }
 
-.about h2::after {
+.about h2 ::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -647,7 +648,8 @@ body {
 
 .timeline-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(100, 255, 218, 0.3);
+    box-shadow: 0 8px 25px rgba(100, 255, 219, 0.39);
+    transform: scale(1.2);
 }
 
 .icon-container {
@@ -860,8 +862,9 @@ body {
 }
 
 /*Skills css end*/
-/* 
+
 /*Projects css start*/
+
 .project-section {
     backdrop-filter: blur(20px);
     border-radius: 20px;
@@ -880,13 +883,33 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     overflow: hidden;
 }
-
 .project-section h2 {
     font-size: 2.8em;
     margin-bottom: 40px;
     color: #64ffda;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+    display: block; 
+}
+
+.project-section h2::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #64ffda; 
+    position: absolute;
+    bottom: -5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s ease-in-out;
+}
+.project-section h2:hover::after {
+    width: 100%; 
+}
+.project-section h2:hover::before,
+.project-section h2:hover::after {
+    width: 20%; 
 }
 
 .project-grid {
@@ -979,8 +1002,7 @@ body {
         width: 100%;
     }
 }
-
-/*Projects css start*/
+/* Projects Section */
 .project-section {
     backdrop-filter: blur(20px);
     border-radius: 20px;
