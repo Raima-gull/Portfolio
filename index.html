@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Loader start-->
+    <div class="loader-container">
+        <div class="wave-loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--Loader end-->
+    <!--Navbar start-->
+    <nav class="navbar">
+        <div class="logo">
+            <img id="logo" src="./images/logo.png" alt="Portfolio Logo">
+        </div>
+        <div class="toggle-btn" id="toggle-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="hire-me-btn" aria-label="Chat on WhatsApp" href="https://wa.me/03186615306">Hire Me</a>
+    </nav>
+    <!--Navbar end-->
+    <main id="home">
+        <!--Hero section start-->
+        <section class="hero" data-aos="fade-down">
+            <div class="circle top-left"></div>
+            <div class="circle bottom-right"></div>
+            <div class="hero-bg-decor"></div>
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Raima Gull</span></h1>
+                <h2 class="typing">Frontend Developer | Web Designer</h2>
+                <p>
+                    I design and develop user-friendly, responsive websites with a strong focus on UI/UX to enhance usability and
+                    engagement.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a class="btn secondary" href="./RaimaGullResume.pdf" download>
+                        <i class="fas fa-cloud-download-alt"></i> Download CV
+                    </a>
+                </div>
+
+                <div class="hero-social-icons">
+                    <a href="https://www.linkedin.com/in/raima-gull-b08b34338/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+ </a>
+                      <a href="https://github.com/Raima-gull" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image"> <img src="./images/My pic.png" alt="Raima Gull's Profile Picture"> </div>
+        </section>
+        <!--Hero section end-->
+        <!--About start-->
+        <section class="about" id="about" data-aos="fade-down">
+            <div class="circle top-left"></div>
+            <div class="circle bottom-right"></div>
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p class="tagline">Fueling creativity through innovative designs and clean code.</p>
+                <div class="about-content">
+                    <div class="highlight-box" data-aos="fade-down" data-aos-delay="200">
+                        <p><span class="highlight">Passionate Coder</span></p>
+                    </div>
+                    <div class="highlight-box" data-aos="fade-down" data-aos-delay="400">
+                        <p><span class="highlight">Creative Thinker</span></p>
+                    </div>
+                    <div class="highlight-box" data-aos="fade-down" data-aos-delay="600">
+                        <p><span class="highlight">Problem Solver</span></p>
+                    </div>
+                    <p>
+                        I’m Raima Gull, a passionate frontend developer dedicated to creating responsive and visually engaging
+                        websites. By combining creativity with clean, efficient code, I bring ideas to life while ensuring seamless
+                        user experiences across devices.
+                    </p>
+                    <p>
+                        With expertise in modern web technologies and a strong focus on scalability, I deliver solutions that are
+                        both innovative and future-ready. My commitment to collaboration and continuous learning drives me to craft
+                        impactful, user-focused designs that leave a lasting impression.
+                    </p>
+                    <div class="button-container">
+                        <button class="see-my-projects">See My Projects</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About end-->
+        <!--Education start-->
+        <section class="Education-section" id="education" data-aos="fade-down">
+            <div class="edu-container">
+                <div class="circle top-left"></div>
+                <div class="circle bottom-right"></div>
+                <div class="edu-box">
+                    <h1>Education</h1>
+                    <div class="animated-line"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="progress-line"></div>
+                    <div class="timeline-item" data-aos="fade-down" data-aos-delay="200">
+                        <div class="icon-container">📘</div>
+                        <h3 class="timeline-title"><span style="font-size:1.4rem ;color: #64ffda;">Matriculation</span><br>(Karachi
+                            Metropolitan Academy)</h3>
+                        <p class="timeline-description">Completed Matriculation from Karachi Metropolitan Academy with a strong
+                            foundation in science and academics.</p>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-down" data-aos-delay="400">
+                        <div class="icon-container">🎓</div>
+                        <h3 class="timeline-title"><span
+                                style="font-size:1.4rem ;color: #64ffda;">Intermediate</span><br>(Government College Womens Saudabad)
+                        </h3>
+                        <p class="timeline-description">Currently studying Intermediate in Saudi Arabia, focusing on mathematics and
+                            technical subjects.</p>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-down" data-aos-delay="600">
+                        <div class="icon-container">💻</div>
+                        <h3 class="timeline-title"><span style="font-size:1.4rem ;color: #64ffda;">Higher Diploma in Software
+                                Engineering</span><br>(Aptech)</h3>
+                        <p class="timeline-description">Currently pursuing HDSE from Aptech, gaining expertise in software
+                            development, programming, and modern technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Education end-->
+
+        <!--Skills start-->
+        <section class="Skills" id="skills" data-aos="fade-down">
+            <div class="circle top-left"></div>
+            <div class="circle bottom-right"></div>
+            <h2 class="skills-title">My Skills</h2>
+            <div class="hex-container" style="padding: 0 10rem;">
+                <div class="hex" data-aos="fade-down" data-aos-delay="200"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="300"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="400"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="500"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="600"><i class="fa-brands fa-figma"></i> Figma</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="700"><i class="fa-solid fa-palette"></i> UI/UX</div>
+                <div class="hex" data-aos="fade-down" data-aos-delay="800"><i class="fa-solid fa-magnifying-glass"></i> SEO</div>
+            </div>
+        </section>
+        <!--Skills end-->
+        <!-- Projects start -->
+        <section class="project-section" id="Projects" data-aos="fade-down">
+            <div class="circle top-left"></div>
+            <div class="circle bottom-right"></div>
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card" data-aos="fade-down" data-aos-delay="200">
+                    <img src="./images/delivery res.png" alt="Project One">
+                    <div class="project-info">
+                        <h3>Food Delivery Restaurant</h3>
+                        <p>A modern food delivery website with smooth animations and an interactive UI.</p>
+                        <a href="https://food-delivery-resturant.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-down" data-aos-delay="300">
+                    <img src="./images/nursery.png" alt="Project Two">
+                    <div class="project-info">
+                        <h3>Home Grown Nursery</h3>
+                        <p>An elegant and responsive website designed for a plant nursery business.</p>
+                        <a href="https://home-grown-nursery.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-down" data-aos-delay="400">
+                    <img src="./images/travel-image.png" alt="Project Three">
+                    <div class="project-info">
+                        <h3>Master Travel</h3>
+                        <p>A fully-featured travel platform offering blogs, hotel, and flight bookings.</p>
+                        <a href="https://master-travel.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-down" data-aos-delay="500">
+                    <img src="./images/harvel.png" alt="Project Four">
+                    <div class="project-info">
+                        <h3>Harvel Electrics</h3>
+                        <p>A user-friendly e-commerce website for buying and selling electronics.</p>
+                        <a href="https://hravel-electrics.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-down" data-aos-delay="600">
+                    <img src="./images/game.png" alt="Project Five">
+                    <div class="project-info">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>A fun, interactive Tic Tac Toe game with engaging UI and animations.</p>
+                        <a href="https://tic-tac-toeye-challenge.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-down" data-aos-delay="700">
+                    <img src="./images/calculator.png" alt="Project Six">
+                    <div class="project-info">
+                        <h3>Calculator</h3>
+                        <p>A simple, efficient, and responsive calculator for everyday use.</p>
+                        <a href="https://easy-basic-calculator.netlify.app/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Projects end-->
+        <!--Contact start-->
+        <section class="main-contact" id="contact" data-aos="fade-down">
+            <div class="contact-section">
+                <div class="circle top-left"></div>
+                <div class="circle bottom-right"></div>
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Whether you have a question or just want to say hi, our inbox is always open.</p>
+                <div class="boxes-container">
+                    <div class="contact-box" data-aos="fade-down" data-aos-delay="200">
+                        <h3>Email</h3>
+                        <p>raimagull87@gmail.com</p>
+                    </div>
+                    <div class="contact-box" data-aos="fade-down" data-aos-delay="300">
+                        <h3>Phone</h3>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="/submit-form" method="post">
+                    <div style="display: flex; justify-content: space-between; width: 95%;">
+                        <input type="text" name="last_name" placeholder="Last Name" required style="width: 45%;">
+                        <input type="text" name="first_name" placeholder="First Name" required style="width: 45%;">
+                    </div>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <a class="form-btn" aria-label="Chat on WhatsApp" href="https://wa.me/03186615306">Send</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--Contact end-->
+    <!--Footer start-->
+    <footer class="footer" data-aos="fade-down">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="Portfolio Logo" class="logo">
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="mailto:raimagull87@gmail.com">raimagull87@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+            </div>
+            <div class="footer-socials">
+                <h2>Connect with Me</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/raima-gull-b08b34338/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/Raima-gull" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://twitter.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Portfolio | Designed by <span class="highlight">Raima Gull</span></p>
+        </div>
+    </footer>
+    <!--Footer end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
