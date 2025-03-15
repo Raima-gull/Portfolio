@@ -1272,13 +1272,14 @@ body {
 }
 
 /*Contact end*/
+
 /* Footer Styles */
 .footer {
     top: 0;
     z-index: 10;
     transition: background 0.3s ease;
     color: #E6F1FF;
-    padding: 4rem;
+    padding: 3rem;
     text-align: center;
     background: #1B2A41;
     margin-top: 5rem;
@@ -1290,7 +1291,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -1316,7 +1317,6 @@ body {
     color: #64ffda;
     margin-bottom: 1rem;
 }
-
 .footer-contact p a {
     color: #64ffda;
     text-decoration: none;
@@ -1325,7 +1325,9 @@ body {
 .footer-contact p a:hover {
     text-decoration: underline;
 }
-
+.footer-services p:hover{
+color: #64ffda;
+}
 .social-icons {
     display: flex;
     gap: 1.5rem;
